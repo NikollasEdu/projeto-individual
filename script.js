@@ -1,5 +1,5 @@
 function updateClock() {
-    const clockElement = document.getElementById('clock'):
+    const clockElement = document.getElementById('clock');
 
     const now = new Date();
     let hours = now.getHours();
