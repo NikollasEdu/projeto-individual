@@ -1,5 +1,5 @@
 function updateClock() {
-    const clockElement = document.getElementById('clock');
+    const relogioElement = document.getElementById('relogio');
 
     const now = new Date();
     let hours = now.getHours();
@@ -11,7 +11,7 @@ function updateClock() {
     seconds = seconds < 10 ? '0' + seconds : seconds;
 
     const timeString = `${hours}:${minutes}:${seconds}`;
-    clockElement.textContent = timeString;
+    relogioElement.textContent = timeString;
 }
 
 setInterval(updateClock, 1000);
